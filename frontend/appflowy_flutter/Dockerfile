@@ -15,4 +15,4 @@ COPY --from=build /app/build/web /app
 RUN npm install -g http-server
 
 EXPOSE 8080
-CMD ["http-server", "/app", "-p", "8080", "--host", "0.0.0.0"]
+CMD ["http-server", "-p", "8888", "--host", "0.0.0.0"]
